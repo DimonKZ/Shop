@@ -1,0 +1,43 @@
+@use "../abstracts/variables" as vars;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* чтобы padding и border учитывались в width/height */
+}
+
+html, body {
+  height: 100%;
+  font-size: 62.5%; 
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%; /* отключаем авто-изменение шрифтов на iOS */
+}
+
+body {
+  font-family: vars.$font-base;
+  background: vars.$color-bg-secondary;
+  color: vars.$color-text;
+}
+
+ul, ol {
+  list-style: none; /* убираем точки и нумерацию */
+}
+
+a {
+  text-decoration: none; /* убираем подчёркивания */
+  color: inherit; /* ссылки наследуют цвет текста */
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%; /* чтобы не вылезали за контейнер */
+}
+
+button, input, textarea, select {
+  font: inherit; /* наследуем шрифты от body */
+  border: none;
+  background: none;
+  outline: none;
+}

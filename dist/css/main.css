@@ -1,0 +1,298 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* чтобы padding и border учитывались в width/height */
+}
+
+html, body {
+  height: 100%;
+  font-size: 62.5%;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%; /* отключаем авто-изменение шрифтов на iOS */
+}
+
+body {
+  font-family: "SF Pro Display", Arial, sans-serif;
+  background: #f8f9fa;
+  color: #333333;
+}
+
+ul, ol {
+  list-style: none; /* убираем точки и нумерацию */
+}
+
+a {
+  text-decoration: none; /* убираем подчёркивания */
+  color: inherit; /* ссылки наследуют цвет текста */
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%; /* чтобы не вылезали за контейнер */
+}
+
+button, input, textarea, select {
+  font: inherit; /* наследуем шрифты от body */
+  border: none;
+  background: none;
+  outline: none;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/SFProDisplay-Medium.woff2") format("woff2"), url("../fonts/SFProDisplay-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Coiny 2.0";
+  src: url("../fonts/coiny2_0.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 140rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.header-bg {
+  background-color: #ffffff;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+}
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__logo-image {
+  width: 8rem;
+  height: 8rem;
+}
+.header__logo-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.header__logo-title {
+  font-family: "Coiny 2.0", serif;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 100%;
+  color: #444;
+}
+.header__logo-subtitle {
+  font-family: "SF Pro Display", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.15rem;
+  text-align: center;
+  color: #494949;
+}
+.header__catalog-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  width: 25rem;
+  padding: 1.5rem 2rem;
+  background-color: #E24C55;
+  cursor: pointer;
+}
+.header__catalog-btn .header__catalog-text {
+  font-family: "SF Pro Display", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #fff;
+  letter-spacing: 0.1rem;
+}
+.header__catalog-btn .header__catalog-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 2rem;
+}
+.header__catalog-btn .header__catalog-menu span {
+  display: block;
+  height: 0.2rem;
+  width: 2.9rem;
+  background-color: #fff;
+}
+.header__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32rem;
+  border: 0.1rem solid #cecdcd;
+}
+.header__search .header__search-input {
+  width: 100%;
+  padding: 1.4rem;
+  padding-left: 1.2rem;
+  font-family: "SF Pro Display", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #adadad;
+}
+.header__search .header__search-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  border: 0.1rem solid #cecdcd;
+  background: #ececec;
+  cursor: pointer;
+}
+.header__search .header__search-btn .header__search-icon {
+  width: 3rem;
+  height: 3rem;
+}
+.header__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+}
+.header__socials a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__socials img {
+  width: 5rem;
+  height: 5rem;
+}
+.header__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+.header__actions .header__favorite {
+  padding: 1rem;
+}
+.header__actions .header__cart {
+  padding: 0.8rem;
+}
+.header__actions button {
+  border-radius: 50%;
+  border: 0.2rem solid #c0c0c0;
+  cursor: pointer;
+}
+
+.separator {
+  width: 100%;
+  border: 1px solid #d7d7d7;
+}
+
+.nav-bg {
+  background-color: #ffffff;
+}
+
+.nav {
+  padding: 2.2rem 0rem 2.6rem 0rem;
+}
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.nav__link {
+  font-family: "SF Pro Display", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #333333;
+}/*# sourceMappingURL=main.css.map */

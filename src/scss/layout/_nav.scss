@@ -1,0 +1,24 @@
+@use "../abstracts/variables" as vars;
+
+.nav-bg{
+    background-color: vars.$color-bg;
+}
+
+.nav {
+    padding: 2.2rem 0rem 2.6rem 0rem;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        
+    }
+
+    &__link {
+        font-family: vars.$font-base;
+        font-weight: 600;
+        font-size:1.6rem;
+        color: vars.$color-text;
+    }
+}
