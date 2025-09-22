@@ -1,0 +1,34 @@
+src/
+ └── scss/
+      ├── base/          // базовые стили
+      │    ├── _reset.scss       // обнуление стилей
+      │    ├── _typography.scss  // шрифты, тексты
+      │    └── _utilities.scss   // вспомогательные классы
+      │
+      ├── abstracts/     // переменные, функции, миксины
+      │    ├── _variables.scss
+      │    ├── _mixins.scss
+      │    └── _functions.scss
+      │
+      ├── layout/        // сетка и крупные блоки
+      │    ├── _header.scss
+      │    ├── _footer.scss
+      │    ├── _grid.scss
+      │    └── _navigation.scss
+      │
+      ├── components/    // мелкие модули (кнопки, карточки)
+      │    ├── _buttons.scss
+      │    ├── _cards.scss
+      │    ├── _forms.scss
+      │    └── _modal.scss
+      │
+      ├── pages/         // стили для отдельных страниц
+      │    ├── _home.scss
+      │    ├── _catalog.scss
+      │    ├── _product.scss
+      │    └── _cart.scss
+      │
+      ├── vendors/       // стили сторонних библиотек
+      │    └── _normalize.scss
+      │
+      └── main.scss      // точка входа, где всё импортируется

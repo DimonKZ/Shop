@@ -1,0 +1,20 @@
+@use "abstracts/variables";
+
+@use "base/reset";
+@use "base/typography";
+
+// «скелет» страницы
+@use "layout/grid";
+@use "layout/header";
+@use "layout/nav";
+
+// переиспользуемые элементы (кнопки, карточки, формы)
+// @import "components/button";
+// @import "components/card";
+// @import "components/search";
+// @import "components/socials";
+
+// специфические правки под конкретную страницу
+// @import "pages/home";
+// @import "pages/catalog";
+// @import "pages/product";
