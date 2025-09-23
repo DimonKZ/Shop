@@ -8,6 +8,9 @@
 @use "layout/header";
 @use "layout/nav";
 
+@use "block/main";
+@use "block/slider";
+
 // переиспользуемые элементы (кнопки, карточки, формы)
 // @import "components/button";
 // @import "components/card";
