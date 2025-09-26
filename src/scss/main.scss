@@ -10,6 +10,9 @@
 
 @use "block/main";
 @use "block/slider";
+@use "block/features";
+
+@use "components/breadcrumbs";
 
 // переиспользуемые элементы (кнопки, карточки, формы)
 // @import "components/button";

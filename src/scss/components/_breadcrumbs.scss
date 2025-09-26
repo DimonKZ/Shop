@@ -1,0 +1,24 @@
+@use "../abstracts/variables" as vars;
+
+.breadcrumbs {
+    margin-bottom: 4.8rem;
+    &__list {
+        display: flex; 
+        list-style: none;
+    }
+
+    &__item {
+        font-size:  vars.$font-size-base;
+        font-family: vars.$font-base;
+        font-weight: 400;
+        color: #595959;
+    }
+
+    &__link {
+        
+    }
+
+    &__separator {
+        margin: 0 0.8rem;
+    }
+}

@@ -2,15 +2,14 @@
 
 .slider {
     position: relative;
-    min-height: 25rem;
-    border: 1px solid red;
+    min-height: 32rem;
     &__items {
         position: relative;
     }
 
     &__item {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         position: absolute;
         top: 0;
@@ -23,19 +22,41 @@
     }
 
     &__btn {
-
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 5rem;
+        height: 5rem;
+        border-top: 0.3rem solid gray;
+        border-left: 0.3rem solid gray;
+        cursor: pointer;
+        transition: 0.5s all;
     }
 
     &__btn--left {
-
+        left: -3%;
+        transform: translateY(-50%) rotate(-45deg);
     }
 
     &__btn--right {
+        right: -3%;
+        transform: translateY(-50%) rotate(135deg);
+    }
 
+    &__btn--left:hover {
+        transform: translateY(-50%) rotate(-45deg) scale(1.1);
+    }
+
+    &__btn--right:hover {
+        transform: translateY(-50%) rotate(135deg) scale(1.1); 
     }
 
     &__info {
-
+        width: 100%;
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     &__list {
@@ -44,10 +65,38 @@
         align-items: center;
     }
 
+    &__link {
+        display: flex;
+        flex-direction: column;
+        height: 23rem;
+    }
+
+    &__link p {
+        font-family: vars.$font-base;
+        font-weight: 700;
+        font-size: 2.2rem;
+        color: vars.$color-primary;
+        margin-top: 0;
+        align-self: center; /* прижать текст к верху */
+    }
+
+    &__link img {
+        margin-top: auto;
+        margin-bottom: auto; /* картинка по центру */
+    }
+
     .list__item {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        font-family: vars.$font-base;
+        font-weight: 500;
+        font-size: vars.$font-size-secondary;
+        color: vars.$color-text;
+    }
+
+    .list__item img {
+        margin-right: 0.5rem;
     }
 
     .dots {
@@ -55,16 +104,22 @@
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        z-index: 10;
         &__dot {
             width: 2rem;
             height: 2rem;
             margin-right: 1.5rem;
             border-radius: 50%;
-            border: 1px solid grey;
+            border: 0.1rem solid grey;
             cursor: pointer;
+            transition: 0.5s all;
+        }
+
+        &__dot:hover {
+            transform: scale(1.1);
         }
     }
+
+    
 }
 
 
