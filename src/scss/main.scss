@@ -3,10 +3,17 @@
 @use "base/reset";
 @use "base/typography";
 
-// «скелет» страницы
+
 @use "layout/grid";
 @use "layout/header";
 @use "layout/nav";
+
+@use "block/main";
+@use "block/features";
+@use "block/slider";
+@use "block/catalog";
+
+@use "components/breadcrumbs";
 
 // переиспользуемые элементы (кнопки, карточки, формы)
 // @import "components/button";

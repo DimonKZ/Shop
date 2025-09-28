@@ -1,0 +1,48 @@
+@use "../abstracts/variables" as vars;
+
+.catalog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title {
+        font-family: vars.$font-base;
+        font-weight: 700;
+        font-size: 2.4rem;
+        text-align: center;
+        color: vars.$color-text;
+        margin-bottom: 2.1rem;
+    }
+
+    &__body {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        background-color: vars.$color-bg;
+        margin-top: 2.1rem;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        padding: 2rem;
+    }
+
+    &__item:hover {
+        background-color: vars.$color-primary;
+    }
+
+    &__img {
+        
+    }
+
+    &__text {
+        font-family: vars.$font-base;
+        font-weight: 700;
+        font-size: 1.8rem;
+        color: #3b3b3b;
+    }
+}
