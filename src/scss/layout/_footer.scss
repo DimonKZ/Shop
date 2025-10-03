@@ -1,0 +1,65 @@
+@use "../abstracts/variables" as vars;
+
+.footer {
+  &__top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logo {
+    &-img {
+    }
+    &-text {
+    }
+    &-title {
+    }
+    &-subtitle {
+    }
+  }
+
+  &__nav {
+  }
+
+  &__col {
+  }
+
+  &__title {
+  }
+
+  &__list {
+    &-item {
+    }
+  }
+
+  &__link {
+  }
+
+  &__contacts {
+  }
+
+  &__address {
+  }
+
+  &__phone {
+  }
+
+  &__schedule {
+  }
+
+  &__email {
+  }
+
+  &__bottom {
+  }
+
+  &__policy {
+  }
+
+  &__copyright {
+  }
+
+  &__developer {
+  }
+}

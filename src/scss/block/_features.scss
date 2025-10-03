@@ -1,14 +1,13 @@
 @use "../abstracts/variables" as vars;
 
 .features {
-    border: 1px solid gray;
     display: flex;
-    
+    margin-bottom: 4rem;
     &__content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        background-color: vars.$color-bg;
         .features__item {
-            border: 1px solid red;
             display: flex;
             flex-direction: column; 
             align-items: center;
@@ -31,9 +30,16 @@
     }
 
     &__block {
-        border: 1px solid red;
+        padding-top: 3.3rem;
         width: 100%;
+        background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 100%),
+                    url('../images/features/features-bg.jpg') no-repeat center / cover;
     }
     &__title {
+        font-family: vars.$font-base;
+        font-weight: 700;
+        font-size: vars.$font-size-large;
+        color: vars.$color-text-light;
+        text-align: center;
     }
 }

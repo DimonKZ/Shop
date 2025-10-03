@@ -1,11 +1,11 @@
 @use "../abstracts/variables" as vars;
 
 .nav-bg{
-    background-color: vars.$color-bg;
+    background-color: vars.$color-bg-secondary;
 }
 
 .nav {
-    padding: 2.2rem 0rem 2.6rem 0rem;
+    padding: 2.2rem 0rem 1.5rem 0rem;
     &__list {
         display: flex;
         justify-content: space-between;

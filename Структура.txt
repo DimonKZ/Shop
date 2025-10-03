@@ -21,6 +21,7 @@ src/
       │    ├── _cards.scss
       │    ├── _forms.scss
       │    └── _modal.scss
+      │    └──_breadcrumbs.scss
       │
       ├── pages/         // стили для отдельных страниц
       │    ├── _home.scss

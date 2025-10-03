@@ -1,0 +1,133 @@
+@use "../abstracts/variables" as vars;
+
+.discounts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+
+    &__title {
+        margin-bottom: 2.8rem;
+        font-family: vars.$font-base;
+        font-weight: 700;
+        font-size: 2.4rem;
+        color: vars.$color-text;
+    }
+
+    &__body {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2.4rem;
+    }
+
+    &__item {
+        background-color: vars.$color-bg;
+    }
+
+    &__item:hover {
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &__block {
+        position: relative;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+        
+    }
+
+    &__block::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+        pointer-events: none;
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0.6rem;
+        left: 1rem;
+        z-index: 10;
+    }
+
+    &__article {
+        font-family: vars.$font-base;
+        font-weight: 400;
+        font-size: 1rem;
+        color: vars.$color-text-light;
+    }
+
+    &__name {
+        font-family: vars.$font-base;
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: vars.$color-text-light;
+    }
+
+    &__favourites-icon {
+        position: absolute;
+        top: 0.9rem;
+        right: 1.8rem;
+        z-index: 10;
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__description {
+        font-family: vars.$font-base;
+        font-weight: 500;
+        font-size: vars.$font-size-base;
+        text-align: center;
+        color: vars.$color-text;
+    }
+
+    &__details {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: vars.$font-base;
+    }
+
+    &__percent {
+        padding: 0.1rem 1.2rem 0.1rem 1.2rem;
+        font-weight: 600;
+        font-size: 1.3rem;
+        color: vars.$color-text-light;
+        background-color: vars.$color-primary;
+    }
+
+    &__old-price {
+        font-weight: 600;
+        font-size: vars.$font-size-secondary;
+        color: #565656;
+        position: relative;
+    }
+
+    &__old-price::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 0.2rem;
+        background-color: vars.$color-primary;
+        position: absolute;
+        top: 40%;
+        transform: rotate(-10deg);
+    }
+
+    &__new-price {
+        font-weight: 700;
+        font-size: 1.8rem;
+        color: vars.$color-text;
+    }
+}

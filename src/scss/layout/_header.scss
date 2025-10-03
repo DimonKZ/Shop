@@ -1,7 +1,7 @@
 @use "../abstracts/variables" as vars;
 
 .header-bg {
-	background-color: vars.$color-bg;
+	background-color: vars.$color-bg-secondary;
 }
 
 .header {

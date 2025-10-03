@@ -1,0 +1,120 @@
+@use "../abstracts/variables" as vars;
+
+.help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: vars.$color-bg;
+    &__title {
+        width: 100%;
+        padding: 2.5rem 0rem 2.5rem 0rem;
+        font-family: vars.$font-base;
+        font-weight: 700;
+        font-size: vars.$font-size-h3;
+        color: vars.$color-text;
+        background-color: vars.$color-bg-secondary;
+        text-align: center;
+    }
+
+    &__content {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__img {
+        object-fit: cover;
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__logo-img {
+        object-fit: cover;
+    }
+
+    &__logo-title {
+        font-family: vars.$font-heading;
+        font-weight: 400;
+        font-size: 6.1rem;
+        line-height: 100%;
+        color: #444;
+        text-transform: uppercase;
+    }
+
+    &__logo-suptitile {
+        font-family: vars.$font-base;
+        font-weight: 300;
+        font-size: 1.9rem;
+        letter-spacing: 0.15rem;
+        color: #494949;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 29.4rem;
+    }
+
+    &__form-title {
+        font-family: vars.$font-base;
+        font-weight: 400;
+        font-size: 2.0rem;
+        text-align: center;
+    }
+
+    &__form-field {
+
+    }
+
+    &__label {
+        font-family: vars.$font-base;
+        font-weight: 300;
+        font-size: vars.$font-size-secondary;
+        
+    }
+
+    &__input {
+        width: 100%;
+        height: 3.9rem;
+        font-size: 1.7rem;
+        padding-left: 1rem;
+        border: 0.1rem solid vars.$color-primary;
+    }
+
+    .selection-form__field {
+
+    }
+
+    &__btn {
+        margin-top: 2.5rem;
+        padding: 1.2rem 0rem 1.2rem 0rem;
+        font-family: vars.$font-base;
+        font-weight: 500;
+        font-size: 1.8rem;
+        text-align: center;
+        color: vars.$color-text-light;
+        background-color: vars.$color-primary;
+    }
+
+    &__consent {
+        display: flex;
+        align-items: center;
+    }
+
+    &__checkbox {
+        margin-right: 1rem;
+    }
+
+    &__text {
+        font-family: vars.$font-base;
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: #929292;
+    }
+}
