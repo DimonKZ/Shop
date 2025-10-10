@@ -1,65 +1,129 @@
 @use "../abstracts/variables" as vars;
 
 .footer {
-  &__top {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+	background-color: vars.$color-text;
+	color: vars.$color-text-light;
+	&__top {
+		display: flex;
+		flex-direction: column;
+	}
 
-  &__logo {
-    &-img {
-    }
-    &-text {
-    }
-    &-title {
-    }
-    &-subtitle {
-    }
-  }
+	&__block {
+		display: flex;
+		justify-content: space-between;
+		padding: 2.3rem 0rem;
+		border-top: 0.1rem solid #fff;
+		border-bottom: 0.1rem solid #fff;
+		font-size: 1.4rem;
+	}
 
-  &__nav {
-  }
+	&__logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0.7rem 0rem;
+	}
 
-  &__col {
-  }
+	&__logo-img {
+		margin-right: 0.5rem;
+	}
 
-  &__title {
-  }
+	&__logo-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 
-  &__list {
-    &-item {
-    }
-  }
+	&__logo-title {
+		font-family: vars.$font-heading;
+		font-weight: 400;
+		font-size: vars.$font-size-h1;
+		line-height: 70%;
+	}
 
-  &__link {
-  }
+	&__logo-subtitle {
+		font-family: vars.$font-base;
+		font-weight: 400;
+		font-size: vars.$font-size-h2;
+		letter-spacing: 0.2rem;
+		text-align: center;
+	}
 
-  &__contacts {
-  }
+	.footer__nav {
 
-  &__address {
-  }
+	}
 
-  &__phone {
-  }
+	.footer__title {
+		font-family: vars.$font-base;
+		font-weight: 600;
+		font-size: 1.6rem;
+		margin-bottom: 2.3rem;
+	}
 
-  &__schedule {
-  }
+	.footer__item-catalog {
+		font-family: vars.$font-base;
+		font-weight: 400;
+		transition: 0.3s color linear;
+	}
 
-  &__email {
-  }
+	.footer__item-catalog:hover {
+		color: vars.$color-primary;
+	}
 
-  &__bottom {
-  }
+	.footer__nav-link {
+	}
 
-  &__policy {
-  }
+	.footer__catalog {
+		
+	}
 
-  &__copyright {
-  }
+	.footer__catalog > .footer__title {
+		grid-column: 1 / 2;
+	}
 
-  &__developer {
-  }
+	.footer__list-catalog {
+		display: grid;
+		grid-template-columns: repeat(4, auto); // 4 столбца
+		column-gap: 8rem;
+	}
+	.footer__link {
+	}
+	.footer__contacts {
+		font-style: normal;
+	}
+
+	.footer__contacts-item {
+		margin-bottom: 1.7rem;
+		line-height: 110%;
+	}
+
+	.footer__address {
+		font-family: vars.$font-base;
+		font-weight: 400;
+		font-size: 1.4rem;
+		
+	}
+	.footer__phone {
+	}
+	.footer__schedule {
+	}
+	.footer__email {
+	}
+	.footer__bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem;
+		font-family: vars.$font-base;
+		font-weight: 300;
+		font-size: 1.2rem;
+		line-height: 1.2;
+	}
+	.footer__policy {
+	}
+	.footer__copyright {
+		text-align: center;
+	}
+	.footer__developer {
+	}
 }
