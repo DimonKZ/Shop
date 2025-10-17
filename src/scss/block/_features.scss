@@ -3,6 +3,7 @@
 .features {
     display: flex;
     margin-bottom: 4rem;
+    display: none;
     &__content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

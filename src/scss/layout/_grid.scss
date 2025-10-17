@@ -7,7 +7,7 @@
 }
 
 .container {
-    width: vars.$container-width;
+    max-width: vars.$container-width;
     margin: 0 auto;
     padding: 0 2rem;
 }

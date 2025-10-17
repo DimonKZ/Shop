@@ -2,29 +2,18 @@
 
 @use "base/reset";
 @use "base/typography";
-
-
 @use "layout/grid";
+
 @use "layout/header";
 @use "layout/nav";
-@use "layout/footer";
-
+@use "components/breadcrumbs";
 @use "block/main";
-@use "block/features";
 @use "block/slider";
 @use "block/catalog";
 @use "block/discounts";
-
-@use "components/breadcrumbs";
+@use "block/features";
 @use "components/help";
+@use "layout/footer";
 
-// переиспользуемые элементы (кнопки, карточки, формы)
-// @import "components/button";
-// @import "components/card";
-// @import "components/search";
-// @import "components/socials";
+@use "base/media";
 
-// специфические правки под конкретную страницу
-// @import "pages/home";
-// @import "pages/catalog";
-// @import "pages/product";

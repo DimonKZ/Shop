@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     background-color: vars.$color-bg;
+    display: none;
     &__title {
         width: 100%;
         padding: 2.5rem 0rem 2.5rem 0rem;

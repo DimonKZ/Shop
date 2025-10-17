@@ -3,6 +3,7 @@
 .footer {
 	background-color: vars.$color-text;
 	color: vars.$color-text-light;
+	display: none;
 	&__top {
 		display: flex;
 		flex-direction: column;

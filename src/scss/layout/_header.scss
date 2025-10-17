@@ -40,6 +40,12 @@
 		}
 	}
 
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		gap: 2.9rem;
+	}
+
 	&__catalog-btn {
 		position: relative;
 		display: flex;
@@ -120,7 +126,7 @@
 			align-items: center;
 			padding: 1rem;
 			border: 0.1rem solid #cecdcd;
-			background: #ececec;
+			background: inherit;
 			cursor: pointer;
 			.header__search-icon {
 				width: 3rem;
@@ -134,7 +140,9 @@
 		justify-content: space-between;
 		align-items: center;
 		gap: 1.5rem;
+		margin-right: 3rem;
 		.socials__link {
+			transition: 0.5s all linear;
 			&--vk {
 			}
 
@@ -143,6 +151,10 @@
 
 			&--wa {
 			}
+		}
+
+		.socials__link:hover {
+			transform: scale(1.1);
 		}
 	}
 
@@ -180,37 +192,5 @@
 .separator {
 	width: 100%;
 	border: 1px solid #d7d7d7;
-}
-
-// *************************************************
-// ********************* media *********************
-// *************************************************
-
-/* ---------- ≥1200px (Desktop, large screens) ---------- */
-@media (max-width: $breakpoint-desktop) {
-	.header {
-		color: red;
-		display: none;
-	}
-}
-
-/* ---------- ≥992px (Laptops) ---------- */
-@media (max-width: $breakpoint-laptop) {
-
-}
-
-/* ---------- ≥768px (Tablets) ---------- */
-@media (max-width: $breakpoint-tablet) {
- 
-}
-
-/* ---------- ≥576px (Mobiles) ---------- */
-@media (max-width: $breakpoint-mobile) {
-  
-}
-
-/* ---------- ≥360px (Small mobiles) ---------- */
-@media (max-width: $breakpoint-small) {
-  
 }
 

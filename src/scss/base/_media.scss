@@ -1,0 +1,60 @@
+@use "../abstracts/variables" as vars;
+
+/* ---------- ≥1200px (Desktop, large screens) ---------- */
+@media (max-width: vars.$desktop) {
+	html {
+        font-size: 50%; // 9.6px
+    }
+
+    .container {
+        width: 100%;
+    }
+}
+
+/* ---------- ≥992px (Laptops) ---------- */
+@media (max-width: vars.$laptop) {
+    html {
+        font-size: 38%; // 9px
+    }
+}
+
+/* ---------- ≥768px (Tablets) ---------- */
+@media (max-width: vars.$tablet) {
+    html {
+        font-size: 50%; // 8px
+    }
+
+    .container {
+        // width: 100%;
+    }
+
+    .header {
+       justify-content: none;
+    }
+
+    .header__catalog-btn {
+        display: none;
+    }
+
+    .header__socials {
+        display: none;
+    }
+
+    .header__actions {
+        display: none;
+    }
+}
+
+/* ---------- ≥576px (Mobiles) ---------- */
+@media (max-width: vars.$mobile-sm) {
+    html {
+        font-size: 43.75%; // 7px
+    }
+}
+
+/* ---------- ≥360px (Small mobiles) ---------- */
+@media (max-width: vars.$mobile-xs) {
+    html {
+        font-size: 37.5%; // 6px
+    }
+}
